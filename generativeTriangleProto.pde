@@ -7,10 +7,10 @@ void setup()
   size(1000, 1000);
 
   background(0);
-  Xone = width / 4; //125
-  Yone = height; // 500
-  Xtwo = Xone * 3; // 375
-  Ytwo = height; // 500
+  Xone = width / 4; 
+  Yone = height; 
+  Xtwo = Xone * 3; 
+  Ytwo = height;
   iterations = 0;
   //Create two recursive methods for both sides of the triangle
   line(Xone,Yone, Xtwo, Ytwo);
@@ -35,9 +35,9 @@ void randTrianglesLeft(float Xone, float Yone, float Xtwo, float Ytwo, int itera
   }else
   {
     line(Xone, Yone, Xtwo, Ytwo);
-    float midX = (Xone + Xtwo)/2; //187.5
+    float midX = (Xone + Xtwo)/2; 
     System.out.println("New Mid X: " + midX);
-    float midY = (Yone + Ytwo)/2; //375
+    float midY = (Yone + Ytwo)/2; 
     System.out.println("New Mid Y: " + midY);
     float halfLenghtOfOriginalLine = sqrt(pow(Xone - Xtwo,2) + pow(Yone - Ytwo,2))/5;
     System.out.println("Half the length of the og line: " + halfLenghtOfOriginalLine);
@@ -69,9 +69,9 @@ void randTrianglesRight(float Xone, float Yone, float Xtwo, float Ytwo, int iter
   {
     line(Xone, Yone, Xtwo, Ytwo);
     
-    float midX = (Xone + Xtwo)/2; //187.5
+    float midX = (Xone + Xtwo)/2; 
     System.out.println("New Mid X: " + midX);
-    float midY = (Yone + Ytwo)/2; //375
+    float midY = (Yone + Ytwo)/2;
     System.out.println("New Mid Y: " + midY);
     float halfLenghtOfOriginalLine = sqrt(pow(Xone - Xtwo,2) + pow(Yone - Ytwo,2))/5;
     System.out.println("Half the length of the og line: " + halfLenghtOfOriginalLine);
