@@ -1,8 +1,3 @@
-float scale = 1;
-float yPan = 500;
-float xPan = 500;
-boolean zoomIn = true;
-boolean zoomOut = true;
 float Xone; float Yone; float Xtwo; float Ytwo;
 int iterations;
 float newY; float newX;
@@ -29,7 +24,6 @@ void setup()
   randTrianglesRight(Xtwo,Ytwo, newY, newX, iterations);
 }
 
-//Might have to create 3 more methods like this one that operate differntly
 void randTrianglesLeft(float Xone, float Yone, float Xtwo, float Ytwo, int iterations)
 {
   stroke(255);
@@ -41,7 +35,6 @@ void randTrianglesLeft(float Xone, float Yone, float Xtwo, float Ytwo, int itera
   }else
   {
     line(Xone, Yone, Xtwo, Ytwo);
-    //This will the the perpindicular line to the original line.
     float midX = (Xone + Xtwo)/2; //187.5
     System.out.println("New Mid X: " + midX);
     float midY = (Yone + Ytwo)/2; //375
@@ -53,7 +46,7 @@ void randTrianglesLeft(float Xone, float Yone, float Xtwo, float Ytwo, int itera
     System.out.println("Perpendicular X: " + PerpendicularMidX);
     float PerpendicularMidY = abs(midY - halfLenghtOfOriginalLine);
     System.out.println("Perpendicular Y: " + PerpendicularMidY);
-    //perpindicular line
+    
     line(midX, midY, PerpendicularMidX, PerpendicularMidY);
     line(Xone,Yone, PerpendicularMidX, PerpendicularMidY);
     line(Xtwo,Ytwo, PerpendicularMidX,PerpendicularMidY);
@@ -87,7 +80,7 @@ void randTrianglesRight(float Xone, float Yone, float Xtwo, float Ytwo, int iter
     System.out.println("Perpendicular X: " + PerpendicularMidX);
     float PerpendicularMidY = abs(midY - halfLenghtOfOriginalLine);
     System.out.println("Perpendicular Y: " + PerpendicularMidY);
-    //perpindicular line
+
     line(midX, midY, PerpendicularMidX, PerpendicularMidY);
     line(Xone,Yone, PerpendicularMidX, PerpendicularMidY);
     line(Xtwo,Ytwo, PerpendicularMidX,PerpendicularMidY);
