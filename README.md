@@ -1,3 +1,9 @@
-# CoolTriangleAlgo
+# Art Gallery
 
-What I've created here is a prototype of a triangle fractal algorithm (Well, it's sort of a fractal). The main difference between this one and my original triangle fractal algorithm is that it doesn't make a random foundation for the triangles to branch off. I will finish my original algorithm sooner or later.
+This repositery contains a collection of my programming art. I will be adding more in the future.
+
+# Setup
+
+1) Download processing (Link: https://processing.org/download)
+2) Follow documentation
+3) Download the repositeries and run the scripts in the IDE.
